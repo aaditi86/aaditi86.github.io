@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Aaditi Chavare's professional portfolio in Data Analytics, AI and Software Development">
+
+    <meta name="author" content="Aaditi Chavare">
+
     <title>Aaditi Chavare | Portfolio</title>
 
     <style>
@@ -26,6 +31,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 12px;
             padding: 20px 8%;
             background: #111b2e;
             position: sticky;
@@ -96,10 +102,17 @@
             color: #07111f;
             text-decoration: none;
             font-weight: bold;
+            border: 1px solid #38bdf8;
+            cursor: pointer;
+            transition: background 0.3s ease,
+                        color 0.3s ease,
+                        transform 0.2s ease;
         }
 
         .btn:hover {
             background: #7dd3fc;
+            border-color: #7dd3fc;
+            transform: translateY(-2px);
         }
 
         .btn-outline {
@@ -108,8 +121,19 @@
             border: 1px solid #38bdf8;
         }
 
+        .btn-outline:hover {
+            background: #38bdf8;
+            color: #07111f;
+        }
+
+        .resume-btn {
+            background: #38bdf8;
+            color: #07111f;
+        }
+
         section {
             padding: 70px 8%;
+            scroll-margin-top: 90px;
         }
 
         .section-title {
@@ -140,7 +164,10 @@
 
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
             gap: 22px;
         }
 
@@ -149,7 +176,7 @@
             padding: 25px;
             border-radius: 12px;
             border: 1px solid #243650;
-            transition: transform 0.2s;
+            transition: transform 0.2s, border-color 0.2s;
         }
 
         .card:hover {
@@ -166,6 +193,10 @@
         .card p {
             color: #cbd5e1;
             margin-bottom: 12px;
+        }
+
+        .card .btn {
+            margin-top: 8px;
         }
 
         .education {
@@ -192,10 +223,21 @@
             border-top: 1px solid #243650;
         }
 
+        a:focus-visible {
+            outline: 2px solid #7dd3fc;
+            outline-offset: 4px;
+        }
+
         @media (max-width: 600px) {
             nav {
                 gap: 12px;
                 padding: 18px 5%;
+            }
+
+            nav > div:last-child {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
             }
 
             nav a {
@@ -205,10 +247,28 @@
 
             .hero {
                 padding: 75px 6%;
+                min-height: auto;
+            }
+
+            .hero p {
+                font-size: 16px;
             }
 
             section {
                 padding: 50px 6%;
+            }
+
+            .section-title {
+                font-size: 29px;
+            }
+
+            .buttons {
+                gap: 12px;
+            }
+
+            .btn {
+                padding: 11px 16px;
+                font-size: 14px;
             }
         }
     </style>
@@ -216,6 +276,7 @@
 
 <body>
 
+    <!-- Navigation -->
     <nav>
         <div class="logo">Aaditi.</div>
 
@@ -229,9 +290,12 @@
         </div>
     </nav>
 
+    <!-- Home / Hero Section -->
     <header class="hero" id="home">
 
-        <p class="tag">DATA ANALYTICS | AI | SOFTWARE DEVELOPMENT</p>
+        <p class="tag">
+            DATA ANALYTICS | AI | SOFTWARE DEVELOPMENT
+        </p>
 
         <h1>Hello, I'm <span>Aaditi Chavare</span></h1>
 
@@ -255,10 +319,17 @@
                 Visit My GitHub
             </a>
 
+            <!-- Download Resume -->
+            <a href="./Aaditi_Data_Resume.pdf"
+               class="btn resume-btn"
+               download="Aaditi_Data_Resume.pdf">
+                Download Resume
+            </a>
+
         </div>
     </header>
 
-
+    <!-- About Section -->
     <section id="about">
 
         <h2 class="section-title">About Me</h2>
@@ -275,7 +346,7 @@
 
     </section>
 
-
+    <!-- Skills Section -->
     <section id="skills">
 
         <h2 class="section-title">Technical Skills</h2>
@@ -288,29 +359,27 @@
             <span class="skill">Microsoft Excel</span>
             <span class="skill">Data Analysis</span>
             <span class="skill">Exploratory Data Analysis</span>
-            <span class="skill">Pandas & NumPy</span>
+            <span class="skill">Pandas &amp; NumPy</span>
             <span class="skill">Java</span>
             <span class="skill">Spring Boot</span>
             <span class="skill">REST APIs</span>
             <span class="skill">MySQL</span>
-            <span class="skill">HTML & CSS</span>
+            <span class="skill">HTML &amp; CSS</span>
             <span class="skill">JavaScript</span>
-            <span class="skill">Git & GitHub</span>
+            <span class="skill">Git &amp; GitHub</span>
 
         </div>
 
     </section>
 
-
+    <!-- Projects Section -->
     <section id="projects">
 
         <h2 class="section-title">My Projects</h2>
 
         <div class="project-grid">
 
-
             <!-- Netflix Data Analysis Project -->
-
             <div class="card">
 
                 <h3>Netflix Data Analysis</h3>
@@ -335,9 +404,7 @@
 
             </div>
 
-
             <!-- Smart Banking System Project -->
-
             <div class="card">
 
                 <h3>Smart Banking System</h3>
@@ -362,12 +429,11 @@
 
             </div>
 
-
         </div>
 
     </section>
 
-
+    <!-- Education Section -->
     <section id="education">
 
         <h2 class="section-title">Education</h2>
@@ -377,7 +443,7 @@
             <h3>B.Tech in Computer Science Engineering</h3>
 
             <p>
-                Specialization: Artificial Intelligence & Data Science
+                Specialization: Artificial Intelligence &amp; Data Science
             </p>
 
             <p>
@@ -392,7 +458,7 @@
 
     </section>
 
-
+    <!-- Contact Section -->
     <section id="contact">
 
         <h2 class="section-title">Let's Connect</h2>
@@ -418,15 +484,22 @@
                 LinkedIn
             </a>
 
+            <!-- Resume Download in Contact Section -->
+            <a href="./Aaditi_Data_Resume.pdf"
+               class="btn resume-btn"
+               download="Aaditi_Data_Resume.pdf">
+                Download My Resume
+            </a>
+
         </div>
 
     </section>
 
-
+    <!-- Footer -->
     <footer>
 
         <p>
-            © 2026 Aaditi Chavare | Personal Portfolio
+            &copy; 2026 Aaditi Chavare | Personal Portfolio
         </p>
 
         <p>
