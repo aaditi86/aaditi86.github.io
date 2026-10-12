@@ -1,17 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Aaditi Chavare's professional portfolio in Data Analytics, AI and Software Development">
+    <meta name="description"
+          content="Aaditi Chavare's professional portfolio in Data Analytics, AI and Software Development">
 
     <meta name="author" content="Aaditi Chavare">
 
     <title>Aaditi Chavare | Portfolio</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -25,6 +26,8 @@
             color: #f1f5f9;
             line-height: 1.7;
         }
+
+        /* ================= NAVIGATION ================= */
 
         nav {
             display: flex;
@@ -49,11 +52,14 @@
             text-decoration: none;
             color: white;
             margin: 0 8px;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
             color: #38bdf8;
         }
+
+        /* ================= HERO ================= */
 
         .hero {
             min-height: 78vh;
@@ -87,6 +93,8 @@
             color: #cbd5e1;
         }
 
+        /* ================= BUTTONS ================= */
+
         .buttons {
             margin-top: 28px;
             display: flex;
@@ -104,9 +112,11 @@
             font-weight: bold;
             border: 1px solid #38bdf8;
             cursor: pointer;
-            transition: background 0.3s ease,
-                        color 0.3s ease,
-                        transform 0.2s ease;
+
+            transition:
+                background 0.3s ease,
+                color 0.3s ease,
+                transform 0.2s ease;
         }
 
         .btn:hover {
@@ -126,10 +136,21 @@
             color: #07111f;
         }
 
+        /* Resume Button */
+
         .resume-btn {
             background: #38bdf8;
             color: #07111f;
+            border-color: #38bdf8;
         }
+
+        .resume-btn:hover {
+            background: #7dd3fc;
+            color: #07111f;
+            border-color: #7dd3fc;
+        }
+
+        /* ================= SECTIONS ================= */
 
         section {
             padding: 70px 8%;
@@ -148,6 +169,8 @@
             font-size: 17px;
         }
 
+        /* ================= SKILLS ================= */
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -161,6 +184,8 @@
             padding: 9px 17px;
             border-radius: 25px;
         }
+
+        /* ================= PROJECTS ================= */
 
         .project-grid {
             display: grid;
@@ -176,7 +201,10 @@
             padding: 25px;
             border-radius: 12px;
             border: 1px solid #243650;
-            transition: transform 0.2s, border-color 0.2s;
+
+            transition:
+                transform 0.2s,
+                border-color 0.2s;
         }
 
         .card:hover {
@@ -199,6 +227,8 @@
             margin-top: 8px;
         }
 
+        /* ================= EDUCATION ================= */
+
         .education {
             border-left: 3px solid #38bdf8;
             padding: 20px;
@@ -210,10 +240,14 @@
             color: #38bdf8;
         }
 
+        /* ================= CONTACT ================= */
+
         .contact-text {
             color: #cbd5e1;
             margin-bottom: 20px;
         }
+
+        /* ================= FOOTER ================= */
 
         footer {
             text-align: center;
@@ -223,12 +257,17 @@
             border-top: 1px solid #243650;
         }
 
+        /* ================= ACCESSIBILITY ================= */
+
         a:focus-visible {
             outline: 2px solid #7dd3fc;
             outline-offset: 4px;
         }
 
+        /* ================= MOBILE ================= */
+
         @media (max-width: 600px) {
+
             nav {
                 gap: 12px;
                 padding: 18px 5%;
@@ -271,33 +310,51 @@
                 font-size: 14px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- Navigation -->
+    <!-- ================= NAVIGATION ================= -->
+
     <nav>
-        <div class="logo">Aaditi.</div>
+
+        <div class="logo">
+            Aaditi.
+        </div>
 
         <div>
+
             <a href="#home">Home</a>
+
             <a href="#about">About</a>
+
             <a href="#skills">Skills</a>
+
             <a href="#projects">Projects</a>
+
             <a href="#education">Education</a>
+
             <a href="#contact">Contact</a>
+
         </div>
+
     </nav>
 
-    <!-- Home / Hero Section -->
+
+    <!-- ================= HOME / HERO ================= -->
+
     <header class="hero" id="home">
 
         <p class="tag">
             DATA ANALYTICS | AI | SOFTWARE DEVELOPMENT
         </p>
 
-        <h1>Hello, I'm <span>Aaditi Chavare</span></h1>
+        <h1>
+            Hello, I'm <span>Aaditi Chavare</span>
+        </h1>
 
         <p>
             Final-year B.Tech Computer Science Engineering student
@@ -306,35 +363,53 @@
             practical software applications.
         </p>
 
+
         <div class="buttons">
+
+            <!-- Projects -->
 
             <a href="#projects" class="btn">
                 Explore My Projects
             </a>
 
+
+            <!-- GitHub -->
+
             <a href="https://github.com/aaditi86"
                class="btn btn-outline"
                target="_blank"
                rel="noopener noreferrer">
+
                 Visit My GitHub
+
             </a>
 
-            <!-- Download Resume -->
+
+            <!-- DOWNLOAD RESUME -->
+
             <a href="./Aaditi_Data_Resume.pdf"
                class="btn resume-btn"
                download="Aaditi_Data_Resume.pdf">
+
                 Download Resume
+
             </a>
 
         </div>
+
     </header>
 
-    <!-- About Section -->
+
+    <!-- ================= ABOUT ================= -->
+
     <section id="about">
 
-        <h2 class="section-title">About Me</h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
         <p class="about-text">
+
             I am a final-year engineering student at Shree Siddheshwar
             Women's College of Engineering, Solapur. My interests include
             Data Analytics, Artificial Intelligence and Software Development.
@@ -342,108 +417,169 @@
             and a Smart Banking System using Java and Spring Boot.
             I am looking for internship and entry-level opportunities
             where I can contribute, learn and grow as a professional.
+
         </p>
 
     </section>
 
-    <!-- Skills Section -->
+
+    <!-- ================= SKILLS ================= -->
+
     <section id="skills">
 
-        <h2 class="section-title">Technical Skills</h2>
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
 
         <div class="skills">
 
             <span class="skill">Python</span>
+
             <span class="skill">SQL</span>
+
             <span class="skill">Power BI</span>
+
             <span class="skill">Microsoft Excel</span>
+
             <span class="skill">Data Analysis</span>
-            <span class="skill">Exploratory Data Analysis</span>
-            <span class="skill">Pandas &amp; NumPy</span>
+
+            <span class="skill">
+                Exploratory Data Analysis
+            </span>
+
+            <span class="skill">
+                Pandas &amp; NumPy
+            </span>
+
             <span class="skill">Java</span>
+
             <span class="skill">Spring Boot</span>
+
             <span class="skill">REST APIs</span>
+
             <span class="skill">MySQL</span>
+
             <span class="skill">HTML &amp; CSS</span>
+
             <span class="skill">JavaScript</span>
+
             <span class="skill">Git &amp; GitHub</span>
 
         </div>
 
     </section>
 
-    <!-- Projects Section -->
+
+    <!-- ================= PROJECTS ================= -->
+
     <section id="projects">
 
-        <h2 class="section-title">My Projects</h2>
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
 
         <div class="project-grid">
 
-            <!-- Netflix Data Analysis Project -->
+
+            <!-- NETFLIX PROJECT -->
+
             <div class="card">
 
-                <h3>Netflix Data Analysis</h3>
+                <h3>
+                    Netflix Data Analysis
+                </h3>
 
                 <p>
+
                     An interactive Power BI dashboard designed to explore
                     Netflix movies and TV shows, content distribution,
                     release trends and other useful insights.
+
                 </p>
 
                 <p>
+
                     <strong>Technologies:</strong>
+
                     Power BI, Power Query, DAX, Data Analysis
+
                 </p>
+
 
                 <a href="https://github.com/aaditi86/Netflix-Data-Analysis-PowerBI"
                    class="btn btn-outline"
                    target="_blank"
                    rel="noopener noreferrer">
+
                     View Project
+
                 </a>
 
             </div>
 
-            <!-- Smart Banking System Project -->
+
+            <!-- SMART BANKING PROJECT -->
+
             <div class="card">
 
-                <h3>Smart Banking System</h3>
+                <h3>
+                    Smart Banking System
+                </h3>
 
                 <p>
-                    A backend banking application that demonstrates customer
-                    management, account-related operations, REST APIs,
-                    database integration and authentication.
+
+                    A backend banking application that demonstrates
+                    customer management, account-related operations,
+                    REST APIs, database integration and authentication.
+
                 </p>
 
                 <p>
+
                     <strong>Technologies:</strong>
+
                     Java, Spring Boot, MySQL, JWT
+
                 </p>
+
 
                 <a href="https://github.com/aaditi86"
                    class="btn btn-outline"
                    target="_blank"
                    rel="noopener noreferrer">
+
                     View GitHub
+
                 </a>
 
             </div>
+
 
         </div>
 
     </section>
 
-    <!-- Education Section -->
+
+    <!-- ================= EDUCATION ================= -->
+
     <section id="education">
 
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">
+            Education
+        </h2>
+
 
         <div class="education">
 
-            <h3>B.Tech in Computer Science Engineering</h3>
+            <h3>
+                B.Tech in Computer Science Engineering
+            </h3>
 
             <p>
-                Specialization: Artificial Intelligence &amp; Data Science
+                Specialization:
+                Artificial Intelligence &amp; Data Science
             </p>
 
             <p>
@@ -458,44 +594,69 @@
 
     </section>
 
-    <!-- Contact Section -->
+
+    <!-- ================= CONTACT ================= -->
+
     <section id="contact">
 
-        <h2 class="section-title">Let's Connect</h2>
+        <h2 class="section-title">
+            Let's Connect
+        </h2>
+
 
         <p class="contact-text">
+
             I am open to suitable internship opportunities and
             entry-level roles in Data Analytics, AI and Software Development.
+
         </p>
 
+
         <div class="buttons">
+
+
+            <!-- GITHUB -->
 
             <a href="https://github.com/aaditi86"
                class="btn"
                target="_blank"
                rel="noopener noreferrer">
+
                 GitHub
+
             </a>
+
+
+            <!-- LINKEDIN -->
 
             <a href="https://www.linkedin.com/in/aaditi-chavare-0118942b2/"
                class="btn btn-outline"
                target="_blank"
                rel="noopener noreferrer">
+
                 LinkedIn
+
             </a>
 
-            <!-- Resume Download in Contact Section -->
+
+            <!-- DOWNLOAD RESUME -->
+
             <a href="./Aaditi_Data_Resume.pdf"
                class="btn resume-btn"
                download="Aaditi_Data_Resume.pdf">
+
                 Download My Resume
+
             </a>
+
 
         </div>
 
     </section>
 
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
 
         <p>
@@ -507,6 +668,7 @@
         </p>
 
     </footer>
+
 
 </body>
 </html>
